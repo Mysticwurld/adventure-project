@@ -101,3 +101,71 @@ li{
   font-size: 1.3rem;
   transition: color 0.3s ease;
 }
+
+.user__ads{
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.image-line {
+  display: flex;
+  align-items: center;
+}
+
+.image-line img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;     /* makes it a circle */
+  object-fit: cover;
+  margin-left: -7px;     /* overlap effect */
+}
+
+/* First image should not shift left */
+.image-line img:first-child {
+  margin-left: 0;
+}
+
+.user__ads > p{
+  font-size: 12px;
+  color: #bebdb7;
+}
+
+.hero__content h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.hero__content p{
+  font-size: 13px;
+  color: #bebdb7;
+  margin-bottom: 15px;
+}
+
+.start__btn{
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  /* background-color: #4f46e5; */
+  color: #52ad8f;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.start__btn:hover{
+  background-color: #4f46e5; 
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 1000px){
+ 
+}
