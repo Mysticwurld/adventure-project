@@ -11,6 +11,13 @@ body{
   color: #fff;
 }
 
+:root {
+  --bg: #ffffff;
+  --text: #333;
+  --toggle-bg: #ccc;
+  --slider-pos: 2px;
+}
+
 a{
   text-decoration: none;
   color: #fff;
@@ -100,6 +107,41 @@ li{
   padding: .9rem;
   font-size: 1.3rem;
   transition: color 0.3s ease;
+}
+
+.toggle__bar{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: .5rem;
+
+}
+
+.toggle-container {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: var(--toggle-bg);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 2px;
+  left: var(--slider-pos);
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth sliding effect */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .user__ads{
