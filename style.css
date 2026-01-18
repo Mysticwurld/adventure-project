@@ -11,6 +11,11 @@ body{
   color: #fff;
 }
 
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .section{
   width: 100vw;
   height: 100vh;
@@ -30,14 +35,69 @@ nav{
   align-items: center;
 }
 
-.logo{
+.logo a{
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
   letter-spacing: 2px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav__btn{
   display: none;
+}
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul a{
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem; 
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+ul a:hover, 
+.icons:hover {
+  color: #4f46e5;
+}
+
+ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+ul a:hover::after {
+  width: 100%;
+}
+
+
+li{
+  padding: 1.2rem;
+}
+
+.icons{
+  padding: .9rem;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
 }
